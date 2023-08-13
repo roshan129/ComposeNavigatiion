@@ -1,9 +1,11 @@
-package com.roshanadke.newcomposenavigation
+package com.roshanadke.newcomposenavigation.screens
 
 sealed class Screen(val route: String) {
 
-    object MainScreen: Screen("MainScreen")
-    object DetailScreen: Screen("DetailScreen")
+    object HomeScreen: Screen("Home")
+    object DetailScreen: Screen("Details")
+    object LoginScreen: Screen("Login")
+    object ChangePassword: Screen("ChangePassword")
 
     fun withArgs(vararg args: String): String {
 
